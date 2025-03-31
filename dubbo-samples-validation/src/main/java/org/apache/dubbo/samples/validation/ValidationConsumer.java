@@ -60,6 +60,7 @@ public class ValidationConsumer {
             ConstraintViolationException ve = (ConstraintViolationException) e;
             Set<ConstraintViolation<?>> violations = ve.getConstraintViolations();
             System.out.println(violations);
+            e.printStackTrace();
         }
 
         // Delete OK
